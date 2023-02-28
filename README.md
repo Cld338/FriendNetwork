@@ -4,9 +4,8 @@
 <br><h3>"그럼 내 지인 또는 주변 사람들은 몇 단계만에 찾을 수 있을까?"</h3>
 <h4>라는 생각에 만들게 되었습니다.</h4>
 
-
-
-
-<br><h4>인스타그램의 frindship api에 요청을 보내 해당 유저의 팔로워 정보(userid, pk_id)를 가져옵니다.</h4>
-<br><h4>userid와 pk_id를 매칭시킨 데이터는 name_id.csv에 저장됩니다.</h4>
-<br><h4>Network 폴더에는 각 유저의 팔로워가 저장됩니다.</h4>
+<h4>
+인스타그램의 frindship api에 요청을 보내 해당 유저의 팔로워 정보(userid, pk_id)를 가져옵니다.<br>
+userid와 pk_id를 매칭시킨 데이터는 name_id.csv에 저장됩니다.<br>
+Network 폴더에는 각 유저의 팔로워가 저장됩니다.<br>
+</h4>
