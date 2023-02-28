@@ -1,32 +1,16 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="AsjPMIJsU86eK-dbJZI518mH8aEgHkKIjxpHnI2F2js" />
     <title>건너 건너 아는 사이</title>
     <!-- JQuery -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- 폰트 -->
-    <style>
-        /* 제목 */
-        @font-face {
-            font-family: 'RixInooAriDuriR';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        /* 부제목 */
-        @font-face {
-            font-family: 'MaplestoryOTFBold';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-    </style>
+    
 
     <!-- 파비콘 -->
     <link rel="icon" href="../static/favicon.ico">
@@ -36,40 +20,7 @@
     <!-- 아이콘 -->
 	<script src="https://kit.fontawesome.com/08e60da0c5.js" crossorigin="anonymous"></script>
 
-    <!-- 입력란 -->
-    <style>
-        .input {
-            border: 2px solid gray;
-            border-radius: 5px;
-            width: 10vw;
-        }
-
-        .button {
-            margin-top: 10px;
-            margin-left: 13vw;
-        }
-    </style>
-
-    <style>
-        * {
-            color: #304155;
-            font-family: 'MaplestoryOTFBold', sans-serif;
-        }
-        a:link {
-            text-decoration: none;
-        }
-        a:visited {
-            text-decoration: none;
-        }
-        a:hover {
-            color : #ff516e;
-            text-decoration: underline;
-        }
-        a:active {
-            color : #304155;
-            text-decoration: none;
-        }
-    </style>
+   
 
     <!-- 로딩화면 -->
     <div>
@@ -83,22 +34,7 @@
                 });
             });
         </script>
-        <style>
-            /* page-loading */
-            #loading {
-                padding-top: 200px;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                position: fixed;
-                display: block;
-                opacity: 0.85;
-                background: white;
-                z-index: 99;
-                text-align: center;
-            }
-        </style>
+        
         <script>
             var arr = [
                 "잠시만 기다려주세요, 세상이 당신을 위해 준비 중입니다.",
@@ -170,16 +106,16 @@
         </form>
         <div>
             {% if able == 0 %}
-                <h5>
+                <h5 >
                     {{ startID }} 님은 비공개 상태이거나 아직 등록되지 않은 계정입니다. <br>
-                    인스타그램 정책에 따라 하루 약 130개의 계정을 등록하고 있습니다.<br>
-                    우선적으로 등록하고 싶으신 경우, 신청하기를 눌러 id를 입력해주세요.
+                    인스타그램 정책에 따라 하루 약 800개의 계정을 등록하고 있습니다.<br>
+                    우선적으로 등록하고 싶으신 경우, 신청하기를 눌러 ID를 입력해주세요.
                 </h5>
             {% elif startID == "" %}
             {% else %}
                 <h3 >
                     {{ startID }}님과 {{ endID }}님은<br>
-                    <h3>
+                    <h3 >
                         ❝
                         {% if distance == 1 %}
                             아는 사이
@@ -210,5 +146,11 @@
             {% endif %}
         </div>  
     </div>
+    <div style="text-align: center;">
+        <br>
+        2월 24일 : 현재 약 2300명의 팔로워를 수집했어요!
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4892977194432545"
+     crossorigin="anonymous"></script>
 </body>
 </html>
